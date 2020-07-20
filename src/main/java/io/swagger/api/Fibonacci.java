@@ -14,9 +14,7 @@ public class Fibonacci {
 
 		else if (upper_bound == 0) {
 			return "0";
-		} else if (upper_bound < 0) {
-			return "Enter the value of input larger than 0 please";
-		}
+		} 
 
 		List<Integer> fiboSeries = findFibonacci(upper_bound);
 		String fibonacci = "";

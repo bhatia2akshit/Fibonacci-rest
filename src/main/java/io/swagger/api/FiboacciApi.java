@@ -31,6 +31,6 @@ public interface FiboacciApi {
         @ApiResponse(code = 200, message = "The Fibonacci sequence in [i,k]", response = String.class) })
     @RequestMapping(value = "/fiboacci/{i}/{k}",
         method = RequestMethod.GET)
-    ResponseEntity<String> fibonacci(@ApiParam(value = "The upper bound of the interval.",required=true) @PathVariable("k") String k, @ApiParam(value = "The lower bound of the interval.",required=true) @PathVariable("i") String i);
+    ResponseEntity<String> fibonacci(@ApiParam(value = "The upper bound of the interval.",required=true) @PathVariable("k") String k, @ApiParam(value = "The lower bound of the interval.") @PathVariable("i") String i);
 
 }
